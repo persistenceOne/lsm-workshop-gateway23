@@ -17,9 +17,9 @@ This workshop includes an interactive part, where we ask audience to launch cons
 
 #### 1. Get executable for your OS
 
-* Linux x86_64: https://github.com/persistenceOne/lsm-workshop-gateway23/releases/download/v8.0.0-rc4/persistenceCore-linux-amd64.tar.gz
-* MacOS (M1 Chip): https://github.com/persistenceOne/lsm-workshop-gateway23/releases/download/v8.0.0-rc4/persistenceCore-macos-m1.tar.gz
-* MacOS x86_64: see compiling from the source 👇
+* **Linux x86_64:** https://github.com/persistenceOne/lsm-workshop-gateway23/releases/download/v8.0.0-rc4/persistenceCore-linux-amd64.tar.gz
+* **MacOS (M1 Chip):** https://github.com/persistenceOne/lsm-workshop-gateway23/releases/download/v8.0.0-rc4/persistenceCore-macos-m1.tar.gz
+* **MacOS x86_64:** see compiling from the source 👇
 
 After getting archive, unpack it and make sure it's available in `$PATH`:
 
@@ -32,6 +32,9 @@ export PATH=$HOME/go/bin:$PATH
 persistenceCore --help
 ```
 
+<details>
+<summary>CLICK HERE for (Alternative) Compiling from Git source 🚀</summary>
+<br>
 #### 1. (Alternative) Compiling from Git source:
 
 * At least having Go 1.19: https://dl.golang.org
@@ -52,6 +55,8 @@ The executable **persistenceCore** will be available in your `$HOME/go/bin`, you
 export PATH=$HOME/go/bin:$PATH
 persistenceCore --help
 ```
+
+</details>
 
 #### 2. Adding a test key
 
