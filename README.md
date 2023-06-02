@@ -35,12 +35,10 @@ persistenceCore --help
 <details>
 <summary>CLICK HERE for (Alternative) Compiling from Git source 🚀</summary>
 <br>
-#### 1. (Alternative) Compiling from Git source:
-
-* At least having Go 1.19: https://dl.golang.org
+Ensure having Go at least 1.19: https://dl.golang.org
 
 ```bash
-git clone git@github.com:persistenceOne/persistenceCore.git
+git clone https://github.com/persistenceOne/persistenceCore.git
 cd persistenceCore
 git checkout v8.0.0-rc4
 go install -mod=readonly ./cmd/persistenceCore
@@ -108,4 +106,14 @@ persistenceCore config
 	"node": "https://lsm-devnet-rpc.core-1.dev:443",
 	"broadcast-mode": "sync"
 }
+```
+
+You also should be able to check your balance. Replace the address with the one you have. 
+
+```bash
+persistenceCore q bank balances persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm
+
+balances:
+- amount: "10"
+  denom: stake
 ```
