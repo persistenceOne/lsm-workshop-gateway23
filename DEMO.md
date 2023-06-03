@@ -111,8 +111,7 @@ Replace `YOUR_RECORD_ID` with numeric ID of your record.
 ### Step 10: Redeem the remaining half of shares
 
 ```
-persistenceCore tx staking redeem-tokens
-5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from workshop -y --gas auto --gas-adjustment 1.5
+persistenceCore tx staking redeem-tokens 5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from workshop -y --gas auto --gas-adjustment 1.5
 ```
 
 Replace `YOUR_RECORD_ID` with numeric ID of your record.
