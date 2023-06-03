@@ -60,6 +60,12 @@ persistenceCore keys list
 persistenceCore keys show workshop -a
 ```
 
+After tx is done, check its status and return values and events:
+
+```
+persistenceCore q tx TX_HASH
+```
+
 ### Step 3: Check bank balance
 
 ```
@@ -89,10 +95,10 @@ Set `YOUR_ADDRES` to your key address, it should list all records owned and accu
 ### Step 7: Transferring half of the shares to Max
 
 ```
-persistenceCore tx bank send YOUR_ADDRESS persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm 5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from workshop -y --gas auto --gas-adjustment 1.5
+persistenceCore tx bank send workshop persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm 5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from workshop -y --gas auto --gas-adjustment 1.5
 ```
 
-Replace `YOUR_ADDRESS` and `YOUR_RECORD_ID` with values obtained before.
+Replace `YOUR_RECORD_ID` with value obtained before. `workshop` is the name of your key, can use address instead.
 
 ### Step 8: Check Max’ delegations
 
