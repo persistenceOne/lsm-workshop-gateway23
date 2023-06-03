@@ -49,7 +49,7 @@ persistenceCore keys show workshop -a
 ### Step 2: Tokenize your delegation
 
 ```
-persistenceCore tx staking tokenize-share persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz 10000000stake YOUR_ADDRESS --from test -y --gas auto --gas-adjustment 1.5
+persistenceCore tx staking tokenize-share persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz 10000000stake YOUR_ADDRESS --from workshop -y --gas auto --gas-adjustment 1.5
 ```
 
 Replace `YOUR_ADDRESS` with your workshop key address, to list all local keys:
@@ -89,7 +89,7 @@ persistenceCore q distribution tokenize-share-record-rewards RECORD_ID
 ### Step 7: Transferring half of the shares to Max
 
 ```
-persistenceCore tx bank send YOUR_ADDRESS persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm 5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from test -y --gas auto --gas-adjustment 1.5
+persistenceCore tx bank send YOUR_ADDRESS persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm 5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from workshop -y --gas auto --gas-adjustment 1.5
 ```
 
 Replace `YOUR_ADDRESS` and `YOUR_RECORD_ID` with values obtained before.
@@ -103,7 +103,7 @@ persistenceCore q staking delegations persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclr
 ### Step 9: Transferring the record to Max
 
 ```
-persistenceCore tx staking transfer-tokenize-share-record YOUR_RECORD_ID persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm --from test -y --gas auto --gas-adjustment 1.5
+persistenceCore tx staking transfer-tokenize-share-record YOUR_RECORD_ID persistence1mn2d9z62l9zqaz3gtz7hrfwg50sclrr7agrkmm --from workshop -y --gas auto --gas-adjustment 1.5
 ```
 
 Replace `YOUR_RECORD_ID` with numeric ID of your record.
@@ -112,7 +112,7 @@ Replace `YOUR_RECORD_ID` with numeric ID of your record.
 
 ```
 persistenceCore tx staking redeem-tokens
-5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from test -y --gas auto --gas-adjustment 1.5
+5000000persistencevaloper1dvxmv2ghefusunnf7vsxhstptql5ggdn6m3ltz/YOUR_RECORD_ID --from workshop -y --gas auto --gas-adjustment 1.5
 ```
 
 Replace `YOUR_RECORD_ID` with numeric ID of your record.
