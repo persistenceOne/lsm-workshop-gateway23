@@ -81,10 +81,10 @@ persistenceCore q staking tokenize-share-records-owned YOUR_ADDRES
 ### Step 6: Check record’s accumulated rewards
 
 ```
-persistenceCore q distribution tokenize-share-record-rewards RECORD_ID
+persistenceCore q distribution tokenize-share-record-rewards YOUR_ADDRES
 ```
 
-`RECORD_ID` must be from your tokenized position, see the list from previous step!
+Set `YOUR_ADDRES` to your key address, it should list all records owned and accumulated rewards.
 
 ### Step 7: Transferring half of the shares to Max
 
