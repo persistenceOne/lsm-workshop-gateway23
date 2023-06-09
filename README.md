@@ -1,4 +1,9 @@
-## Liquid Staking Module Workshop
+## Liquid Staking Module Workshop 2023-06-03
+
+Video recording of this Workshop: <br/>
+<a href="https://www.youtube.com/watch?v=MTEOv4WMVtM">
+<img width="400px" src="https://i.ibb.co/JcGQSnv/Screenshot-2023-06-09-at-10-22-33.png" />
+</a>
 
 ### Programme
 
